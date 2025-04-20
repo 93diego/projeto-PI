@@ -1,0 +1,3 @@
+diego,30
+joe,20
+flor,9

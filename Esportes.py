@@ -1,16 +1,16 @@
 #importando as funções 
 from modalidade import cad_modalidade
-from alunos import cad_alunos
+from aluno.cadastro_aluno import geral1
 from voltar_menu import menu_prin
 from procurar_aluno import proc_aluno
 from menu import relatorios
+
 
 #lugar onde vai armazenar os dados durante o programa
 modalidades = []
 alunos = []
 alunos_m = []
 relatorio_p = []
-
 
 #menu principal, ele roda constante
 while True:
@@ -27,13 +27,14 @@ while True:
         if opcao == 1:
             cad_modalidade(modalidades)
         elif opcao == 2:
-            cad_alunos(alunos)
+            geral1(alunos)
         elif opcao == 3:
             insere_aluno(alunos_m)
         elif opcao == 4:
             relatorios(relatorio_p)
         elif opcao == 5:
             print("programa finalizado")
+            exit()
         else:
             print("opção invalida")
     menu()
