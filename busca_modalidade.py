@@ -1,10 +1,9 @@
 def buscar(teste):
 
-    buscar_m = input("digite o que voce quer buscar")
+    buscar_m = input("Digite o que voce quer buscar: ")
 
-    with open('inscricoes.txt', 'r') as arquivo:
+    with open("inscricoes.txt", "r") as arquivo:
         for linha in arquivo:
-            dados = linha.strip() .split(',')
+            dados = linha.strip().split(",")
             if dados[0] == buscar_m:
                 print(f" atualmente tem {dados[1]} vagas!")
-
