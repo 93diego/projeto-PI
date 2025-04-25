@@ -2,6 +2,7 @@ from busca_modalidade import buscar_modalidade
 from aluno.buscar_aluno import buscar_alunos
 from voltar_menu import menu_prin
 from busca_idade import buscar_idade
+from aluno import cadastro_aluno
 
 menu_1 = []
 modalidade = []
@@ -18,7 +19,7 @@ def relatorios(relatorio_p):
     opcao = int(input(" digite a opção desejada: "))
 
     if opcao == 1:
-        buscar_alunos(alunos)
+        cadastro_aluno.listar_inscricoes()
     elif opcao == 2:
         buscar_modalidade(modalidade)
     elif opcao == 3:
