@@ -1,17 +1,20 @@
 def geral1(alunos):
 
-    def cadastrar_inscricao(nome_aluno, idade):
+    def cadastrar_inscricao(nome_aluno, idade, modalidade):
         with open("inscricoes_aluno.txt", "a") as arquivo:
-            linha = f"{nome_aluno},{idade}\n"
+            linha = f"{nome_aluno},{idade},{modalidade}\n"
             arquivo.write(linha)
-        print("Inscrição cadastrada com sucesso!")
+        print(" Inscrição cadastrada com sucesso!")
 
     def listar_inscricoes():
         with open("inscricoes_aluno.txt", "r") as arquivo:
             for linha in arquivo:
                 dados = linha.strip().split(",")
-                print(f"Aluno: {dados[0]} | Idade: {dados[1]}")
+                print(
+                    f" Aluno: {dados[0]} | Idade: {dados[1]} | Modalidade: {dados[3]}"
+                )
 
-    nome_aluno = input("digite o nome do aluno: ")
-    idade = int(input("digite a idade: "))
-    cadastrar_inscricao(nome_aluno, idade)
+    nome_aluno = input(" Digite o nome do aluno: ")
+    idade = int(input(" Digite a idade: "))
+    modalidade = str(input(" Digite a modalidade do aluno:"))
+    cadastrar_inscricao(nome_aluno, idade, modalidade)

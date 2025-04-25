@@ -1,3 +1,6 @@
-diego,30
-joe,20
-flor,9
+diego,30,futebol
+joe,20,judo
+flor,9,volei
+jorge,23,judo
+marcos,20,futebol
+joao,25,judo

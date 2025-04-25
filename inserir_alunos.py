@@ -1,10 +1,11 @@
 from procurar_aluno import proc_aluno
 
 
-def inserir_alu():
-    nome_aluno = input("Digite o aluno que deseja inserir: ")
+def insere_aluno():
+    nome_aluno = input(" Digite o aluno que deseja inserir: ")
 
     aluno = proc_aluno(nome_aluno)
-
-    if aluno:
-        print("x")
+    print("teste")
+    modalidade = list(input(" Em que Modalidade deseja cadastrar o aluno?: "))
+    modalidade.append(aluno)
+    print(" Aluno cadastrado com sucesso em {modalidade}")
