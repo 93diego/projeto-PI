@@ -28,8 +28,8 @@ while True:
         if opcao == 1:
             geral1(alunos)
         elif opcao == 2:
-           relatorios(relatorio_p) 
-        elif opcao == 4:
+            relatorios(relatorio_p)
+        elif opcao == 3:
             print("Programa finalizado")
             exit()
         else:
